@@ -1,11 +1,58 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-	<title>24 Hour Sunrise Clock</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+	<link rel="stylesheet" href="/css/crap.css">
 </head>
-<body style="margin: auto; text-align: center;">
-	<canvas id="clock" width="400" height="400"></canvas>
-	<script src="/javascripts/suncalc.js"></script>
-	<script src="/javascripts/clock.js"></script>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-med-1-4">
+        <div class="header">
+            <hgroup>
+                <h1 class="brand-title">Daylight Clock</h1>
+                <h2 class="brand-tagline">	<h1>What is this?</h1>
+	<p>It's a simple sunlight clock.  Midnight is at the very bottom, and it goes clockwise from there. Each dot represents 30 minutes of the day. Blue dots are night. Yellow dots are day. Orange dots are dawn/dusk.</p>
+.</h2>
+            </hgroup>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="/">Clock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="/about">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-med-3-4">
+        <div class="canvas_container">
+            <!-- A wrapper for all the blog posts -->
+<canvas id="clock" width="400" height="400"></canvas>
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="http://purecss.io/">About</a></li>
+                        <li><a href="http://twitter.com/yuilibrary/">Twitter</a></li>
+                        <li><a href="http://github.com/yui/pure/">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/javascripts/suncalc.js"></script>
+<script src="/javascripts/clock.js"></script>
+
 </body>
 </html>
